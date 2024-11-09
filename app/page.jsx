@@ -1,8 +1,7 @@
 import { Photo } from "@/components/Photo";
-import Resume from "@/components/Resume";
+import Projects from "@/components/Projects";
 import { Social } from "@/components/Social";
 import { Button } from "@/components/ui/button";
-import { DownloadIcon } from "lucide-react";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
@@ -25,7 +24,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 size="lg"
-                className="gap-2 rounded-full text-accent border-2 border-accent bg-primary hover:bg-accent hover:text-primary hover:transition-all duration-500 uppercase"
+                className="gap-2 rounded-full text-accent border-2 border-accent bg-primary hover:bg-accent hover:text-primary hover:transition-all duration-500 uppercase "
               >
                 <span>Download CV</span>
                 <FiDownload className="text-lg" />
@@ -44,7 +43,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto h-full">
-        <Resume />
+        <Projects />
       </div>
     </section>
   );
