@@ -20,7 +20,7 @@ export const HeroSection = () => {
           debitis assumenda error eveniet quas totam ut
         </p>
         <div className="flex flex-col xl:flex-row items-center gap-8">
-          <a href="">
+          <a href="/assets/Nabil Hossain Resume.pdf" download>
             <Button
               variant="outline"
               size="lg"
