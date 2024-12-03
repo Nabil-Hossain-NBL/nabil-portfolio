@@ -8,11 +8,11 @@ export const ContactSection = () => {
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 rounded-3xl text-center md:text-left  px-10 py-8 flex flex-col md:flex-row gap-8 items-center">
         <div>
           <h2 className="text-2xl font-semibold ">
-            Let's create something amazing together
+            Let&apos;s create something amazing together
           </h2>
           <p className="">
-            Ready to bring your next project to life? Let's connet and discuss
-            how I can help you achieve your goals.
+            Ready to bring your next project to life? Let&apos;s connet and
+            discuss how I can help you achieve your goals.
           </p>
         </div>
         <div>
