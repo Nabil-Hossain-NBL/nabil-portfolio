@@ -37,13 +37,19 @@ export const Photo = () => {
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <defs>
+            <linearGradient id="gradientStroke" gradientTransform="rotate(90)">
+              <stop offset="0%" stopColor="#38bdf8" />
+              <stop offset="100%" stopColor="#38bdf8" />
+            </linearGradient>
+          </defs>
           <motion.circle
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
+            stroke="url(#gradientStroke)"
             strokeWidth="4"
-            strokelLinecap="round"
+            strokellinecap="round"
             strokeLinejoin="round"
             initial={{ strokeDasharray: "24 16 0 0" }}
             animate={{
