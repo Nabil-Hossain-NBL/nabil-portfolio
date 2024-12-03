@@ -26,7 +26,7 @@ const portfolioProjects = [
           "Built a custom video carousel powered by GSAP, delivering an engaging and interactive media browsing experience.",
       },
     ],
-    link: "https://www.youtube.com/watch?v=dImgZ_AH7uA&t=5739s",
+    link: "https://nabiliphone.netlify.app/",
     image: project1,
   },
   {
@@ -42,9 +42,12 @@ const portfolioProjects = [
         title:
           "Integrated MongoDB for efficient real-time data storage and retrieval, enhancing user flow and performance.",
       },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "Ensured a fully responsive design, providing consistent accessibility and optimal viewing across all devices.",
+      },
     ],
-    link: "Ensured a fully responsive design, providing consistent accessibility and optimal viewing across all devices.",
+    link: "https://e-result-team-web-foxes.vercel.app/",
     image: project,
   },
   {
@@ -61,7 +64,7 @@ const portfolioProjects = [
           "Implemented a responsive design, ensuring seamless user experiences across various devices and screen sizes.",
       },
     ],
-    link: "https://www.youtube.com/watch?v=dImgZ_AH7uA&t=5739s",
+    link: "https://nabilhossainportfolio.netlify.app/",
     image: project2,
   },
 ];
