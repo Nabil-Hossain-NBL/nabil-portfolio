@@ -17,7 +17,12 @@ export const Social = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {social.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link
+            key={index}
+            href={item.path}
+            target="_blank"
+            className={iconStyles}
+          >
             {item.icon}
           </Link>
         );
