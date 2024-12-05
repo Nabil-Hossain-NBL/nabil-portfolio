@@ -71,8 +71,8 @@ const portfolioProjects = [
 
 function Projects(props) {
   return (
-    <section className="pb-16 lg:py-24" id="project">
-      <div className="">
+    <section className="pb-16 lg:py-24 " id="project">
+      <div className="order-2 lg:order-1 lg:pb-16">
         <p className="uppercase font-semibold text-center tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
           Real-world Results
         </p>
@@ -84,23 +84,24 @@ function Projects(props) {
           {portfolioProjects.map((project, projectIndex) => (
             <div
               key={project.title}
-              className="bg-gray-800 rounded-3xl overflow-hidden px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 border-white/60 border-2  sticky"
+              className="bg-gray-800 rounded-3xl overflow-hidden px-8 py-8  md:px-10 md:py-12 lg:py-16 lg:px-20 border-white/60 border-2  sticky"
               style={{
                 top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
-              <div className="lg:grid lg:grid-cols-2">
-                <div className="lg:pb-16">
-                  <div className="inline-flex bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-sm tracking-widest uppercase gap-2">
-                    <span>{project.company}</span>
-                    <span>&bull;</span>
-                    <span>{project.year}</span>
-                  </div>
+              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2 md:gap-8">
+                <div className="order-2 lg:order-1 lg:pb-16">
+                  {/* Optional Project Details */}
+                  {/* <div className="inline-flex bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-sm tracking-widest uppercase gap-2">
+      <span>{project.company}</span>
+      <span>&bull;</span>
+      <span>{project.year}</span>
+    </div> */}
                   <h3 className="text-2xl mt-2 md:mt-5 md:text-3xl">
                     {project.title}
                   </h3>
-                  <hr className="border-t-2 border-white/5  mt-4" />
-                  <div className="flex flex-col gap-4 mt-4">
+                  <hr className="border-t-2 border-white/5 mt-4" />
+                  <div className="hidden md:flex flex-col gap-4 mt-4 ">
                     {project.results.map((result) => (
                       <div
                         key={result.title}
@@ -117,18 +118,18 @@ function Projects(props) {
                     <Button
                       variant="outline"
                       size="lg"
-                      className="gap-2 rounded-full bg-white text-gray-950 hover:transition-all hover:scale-105 duration-500  uppercase w-full md:w-auto px-6 mt-8"
+                      className="gap-2 rounded-full bg-white text-gray-950 hover:transition-all hover:scale-105 duration-500 uppercase w-full md:w-auto px-6 mt-8"
                     >
                       <span>visit live site</span>
                       <FaArrowRightLong className="-rotate-45 hover:rotate-0 duration-500" />
                     </Button>
                   </Link>
                 </div>
-                <div className="w-full h-full">
+                <div className="order-1 lg:order-2 w-full h-full">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 "
+                    className="mt-8 -mb-4 md:-mb-0"
                     width={600}
                     height={400}
                     priority

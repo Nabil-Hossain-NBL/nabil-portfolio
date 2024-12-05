@@ -5,7 +5,7 @@ import { Photo } from "./Photo";
 
 export const HeroSection = () => {
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-between py-16 xl:pb-24 nav-height">
+    <div className="flex flex-col xl:flex-row items-center justify-between py-16 lg:py-24 nav-height">
       <div className="text-center xl:text-left order-2 xl:order-none">
         <span className="text-xl">Software Developer</span>
         <h1 className="h1 mb-6">
